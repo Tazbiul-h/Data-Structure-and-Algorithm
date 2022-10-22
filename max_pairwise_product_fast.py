@@ -5,7 +5,7 @@ def max_pairwise_product_fast(a):
             index1 = i
     index2 = 0
     for j in range(1, len(a)):
-        if a[j] > a[index2] and a[j] != a[index1]:
+        if a[j] > a[index2] and j != index1:
             index2 = j
     return a[index1] * a[index2]
 
